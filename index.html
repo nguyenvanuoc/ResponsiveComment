@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Demo</title>
+    <!-- Font Icon -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box-comments">
+            <div class="item">
+                <div class="userbox">
+                    <div class="avatar">
+                        <img src="uploads/avatar1.png" alt="">
+                    </div>
+                    <div class="comment-info">
+                        <div class="username">
+                            <span class="name">adamsdavid</span>
+                            <span class="datetime">20 hours ago</span>
+                        </div>
+                        <div class="mess">
+                            I genuinely think that Codewell’s community is AMAZING. It’s just starting out but the templates on there
+                            are amazing.
+                            👀
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="act act-reply">Reply</a>
+                            <a href="#" class="act">Like</a>
+                        </div>
+                        <div class="input-comment">
+                            <input type="text" class="form-control" placeholder="Input comment...">
+                            <button class="btn btn-send">
+                                <i class="las la-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="item -reply">
+                    <div class="userbox">
+                        <div class="avatar">
+                            <img src="uploads/avatar2.png" alt="">
+                        </div>
+                        <div class="comment-info">
+                            <div class="username">
+                                <span class="name">saramay</span>
+                                <span class="datetime">16 hours ago</span>
+                            </div>
+                            <div class="mess">
+                                I agree. I’ve been coding really well (pun intended) ever since I started practicing on their templates hehe.
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="act act-reply">Reply</a>
+                                <a href="#" class="act">Like</a>
+                            </div>
+                            <div class="input-comment">
+                                <input type="text" class="form-control" placeholder="Input comment...">
+                                <button class="btn btn-send">
+                                    <i class="las la-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="item -reply">
+                        <div class="userbox">
+                            <div class="avatar">
+                                <img src="uploads/avatar3.png" alt="">
+                            </div>
+                            <div class="comment-info">
+                                <div class="username">
+                                    <span class="name">jessica21</span>
+                                    <span class="datetime">14 hours ago</span>
+                                </div>
+                                <div class="mess">
+                                    Okay, this comment wins.
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="act act-reply">Reply</a>
+                                    <a href="#" class="act">Like</a>
+                                </div>
+                                <div class="input-comment">
+                                    <input type="text" class="form-control" placeholder="Input comment...">
+                                    <button class="btn btn-send">
+                                        <i class="las la-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="userbox">
+                    <div class="avatar">
+                        <img src="uploads/avatar4.png" alt="">
+                    </div>
+                    <div class="comment-info">
+                        <div class="username">
+                            <span class="name">andrew231</span>
+                            <span class="datetime">20 hours ago</span>
+                        </div>
+                        <div class="mess">
+                            Thanks for making this, super helpful
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="act act-reply">Reply</a>
+                            <a href="#" class="act">Like</a>
+                        </div>
+                        <div class="input-comment">
+                            <input type="text" class="form-control" placeholder="Input comment...">
+                            <button class="btn btn-send">
+                                <i class="las la-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".act-reply").click(function(){
+            $(this).parents(".userbox").find(".input-comment").toggleClass("show");
+            $(this).toggleClass("active");
+        });
+    </script>
+</body>
+</html>
